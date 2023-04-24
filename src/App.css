@@ -53,7 +53,7 @@
     }
     h1 {
         font-size: 40px;
-        width: 344px;
+        
     }
     .little {
         display: none;
@@ -61,10 +61,13 @@
 
     .time {
         font-size: 40px;
+        padding-top: 90px;
     }
     .hours {
         font-size: 12px;
         word-spacing: 30px;
+        padding-left: 8px;
+        
     }
   }
 

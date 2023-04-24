@@ -1,11 +1,9 @@
 import React from 'react';
 import backgroundImage from './Rectangle.png';
-
 import Timer from "./components/Timer";
-
-
-
 import './App.css';
+
+
 
 function App() {
   return (

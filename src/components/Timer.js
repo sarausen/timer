@@ -4,7 +4,7 @@ const endDate = new Date('2023-05-13T12:00:00');
 
 
 function Timer() {
-  const [timeLeft, setTimeLeft] = useState('');
+  const [timeLeft, setTimeLeft] = useState('-- | -- | -- | --');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,7 +20,7 @@ function Timer() {
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-        setTimeLeft(`${days}  | ${hours}  | ${minutes}  | ${seconds} `);
+        setTimeLeft(`${(days < 10) ? `0${days}` : days}  | ${(hours < 10) ? `0${hours}` : hours}  | ${(minutes < 10) ? `0${minutes}` : minutes}  | ${(seconds < 10) ? `0${seconds}` : seconds}  `);
       }
     }, 1000);
     
